@@ -1,5 +1,5 @@
 class Farmacia:
-    def _init_(self):
+    def __init__(self):
         self.usuarios = {"usuario1": "senha123"}
         self.medicamentos = {
             "Kuratop": {"estoque": 50, "preco": 20.00, "requer_receita": False, "sintomas": ["cortes", "ferimentos", "queimaduras"],
