@@ -27,7 +27,9 @@ class Farmacia:
     def realizar_compra(self, nome, quantidade):
         medicamento = self.buscar_medicamento(nome)
         if medicamento:
-            if quantidade <= medicamento["estoque"]:
+          
+            if quantidade > 0 and quantidade <= medicamento["estoque"]:
+              
                 valor_total = quantidade * medicamento["preco"]
                 medicamento["estoque"] -= quantidade
                 return f"Compra realizada com sucesso! Total a pagar: R${valor_total:.2f}"
@@ -58,12 +60,6 @@ while True:
             print(f"Contraindicações: {', '.join(medicamento['contraindicacoes'])}")
             print(f"Requer receita: {'Sim' if medicamento['requer_receita'] else 'Não'}")
 
-            usuario = input("Digite o usuário: ")
-            senha = input("Digite a senha: ")
-            if farmacia.autenticar_usuario(usuario, senha):
-                print("Usuário autenticado com sucesso!")
-            else:
-                print("Usuário ou senha incorretos.")
         else:
             print("Medicamento não encontrado.")
 
