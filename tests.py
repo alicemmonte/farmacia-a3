@@ -2,6 +2,8 @@ import unittest
 
 class TestFarmaciaTotem(unittest.TestCase):
 
+    from farmacia import FarmaciaTotem
+
     def setUp(self):
         self.farmacia = FarmaciaTotem()
         self.farmacia.cadastrar_usuario("usuario_teste", "senha123", ["alergia ao dimenidrinato"])
