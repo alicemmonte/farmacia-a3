@@ -5,7 +5,7 @@ class TestFarmaciaTotem(unittest.TestCase):
 
     def setUp(self):
         self.farmacia = FarmaciaTotem()
-        self.farmacia.cadastrar_usuario("alice_monte", "alice123", ["alergia ao dimenidrinato"])
+        self.farmacia.cadastrar_usuario("usuario_teste", "senha123", ["alergia ao dimenidrinato"])
 
     def test_buscar_medicamento_existente(self):
         medicamento = self.farmacia.buscar_medicamento("Paracetamol")
