@@ -1,8 +1,7 @@
+from farmacia import FarmaciaTotem
 import unittest
 
 class TestFarmaciaTotem(unittest.TestCase):
-
-    from farmacia import FarmaciaTotem
 
     def setUp(self):
         self.farmacia = FarmaciaTotem()
