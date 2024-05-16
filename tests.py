@@ -49,5 +49,5 @@ class TestFarmaciaTotem(unittest.TestCase):
         autenticado = self.farmacia.autenticar_usuario("usuario_invalido", "senha123")
         self.assertFalse(autenticado)
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     unittest.main()
