@@ -1,6 +1,6 @@
 class Farmacia:
     def __init__(self):
-        self.usuarios = {"usuario1": "senha123"}
+        self.usuarios = {"aliceusuario1": "alice123"}
         self.medicamentos = {
             "Kuratop": {"estoque": 50, "preco": 20.00, "requer_receita": False, "sintomas": ["cortes", "ferimentos", "queimaduras"],
                         "contraindicacoes": ["hipersensibilidade a qualquer um dos componentes da fórmula"]},
@@ -70,7 +70,7 @@ while True:
         print(resultado)
 
     elif opcao == "3":
-        print("Obrigado por utilizar o totem de autoatendimento da Farmácia. Até logo!")
+        print("Obrigado por utilizar o nosso serviço de autoatendimento da Farmácia. Até à próxima!")
         break
 
     else:
