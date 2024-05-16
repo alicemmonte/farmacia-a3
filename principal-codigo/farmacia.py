@@ -27,7 +27,9 @@ class Farmacia:
     def realizar_compra(self, nome, quantidade):
         medicamento = self.buscar_medicamento(nome)
         if medicamento:
+          
             if quantidade > 0 and quantidade <= medicamento["estoque"]:
+              
                 valor_total = quantidade * medicamento["preco"]
                 medicamento["estoque"] -= quantidade
                 return f"Compra realizada com sucesso! Total a pagar: R${valor_total:.2f}"
