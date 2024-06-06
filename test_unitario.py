@@ -14,7 +14,7 @@ class TestFarmacia(unittest.TestCase):
         self.assertIsNone(self.farmacia.buscar_medicamento("medicamento_inexistente"))
 
     def test_realizar_compra(self):
-        self.assertEqual(self.farmacia.realizar_compra("Paracetamol", 5), "Esta medicamento requer receita.")
+        self.assertEqual(self.farmacia.realizar_compra("Paracetamol", 5), "Este medicamento requer receita.")
         self.assertEqual(self.farmacia.realizar_compra("Paracetamol", 20), "Quantidade solicitada excede o estoque disponível.")
         self.assertEqual(self.farmacia.realizar_compra("medicamento_inexistente", 1), "Medicamento não encontrado.")
 
