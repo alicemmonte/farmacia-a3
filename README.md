@@ -1,5 +1,4 @@
 # farmacia-a3
-Projeto A3 - Gestão e Qualidade de Software
 
 Sistema de Totem de Autoatendimento para Farmácias
 
