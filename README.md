@@ -1,5 +1,5 @@
 # farmacia-a3
-Projeto A3 - Gestão e Qualidade de Software
+Projeto A3 
 
 Sistema de Totem de Autoatendimento para Farmácias
 
@@ -18,3 +18,9 @@ Alice Mota Monteirio - RA: 12723132464
 Mikael Cordeiro - RA: 12723134660
 Zildo dos Santos - RA: 12723112954
 Geovane Ferreira da Silva - RA: 12723124365
+
+⌨︎ Como rodar o Codigo 
+Abra a sua IDE.
+Vá em File > Open Folder e escolha ou crie uma pasta para o seu projeto.
+Dentro dessa pasta, crie um arquivo com a extensão apropriada (ex: app.py)
+Cole o código e para rodar digite "python app.py" no terminal.
